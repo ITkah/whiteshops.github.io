@@ -1,3 +1,6 @@
+header {
+  border-bottom: 1px solid #A0A0A0; }
+
 .header_wrap {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; }
@@ -49,6 +52,30 @@
       height: 23px;
       -o-object-fit: contain;
          object-fit: contain; }
+    .header_wrap .header_right a:last-child {
+      position: relative; }
+      .header_wrap .header_right a:last-child span {
+        border-radius: 50%;
+        top: 10px;
+        height: 10px;
+        width: 10px;
+        position: absolute;
+        background: #B92362;
+        color: #fff;
+        font: 7px "600";
+        text-align: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
 
 .bg {
   background: rgba(33, 33, 33, 0.51);
@@ -987,7 +1014,8 @@ nav {
       right: 0;
       bottom: 0; }
     .clients .clients_item .clients_item_sm {
-      position: relative; }
+      position: relative;
+      overflow: hidden; }
     .clients .clients_item .clients_item_sm:nth-child(1) img {
       border-radius: 10px 0 0 10px; }
     .clients .clients_item .clients_item_sm:nth-child(1) span {
@@ -1074,6 +1102,47 @@ nav {
       height: 125px;
       top: -38px;
       position: relative; }
+
+.favorite_top {
+  margin-top: 40px;
+  margin-bottom: 30px; }
+  .favorite_top .favorite_top_title {
+    text-align: center;
+    color: #C1A790;
+    margin-bottom: 3px;
+    font: 1.625rem "900"; }
+  .favorite_top .favorite_top_text {
+    text-align: center;
+    font: 1rem "400";
+    color: #969696; }
+    .favorite_top .favorite_top_text span {
+      color: #000; }
+
+.disabled_favorite {
+  margin-top: 35px; }
+  .disabled_favorite .dis_title {
+    font: 1.2rem "800";
+    text-align: center;
+    color: #000;
+    margin-bottom: 5px; }
+  .disabled_favorite .dis_text {
+    text-align: center;
+    max-width: 330px;
+    margin: 0 auto;
+    color: #000;
+    font: .87rem/16px "400";
+    margin-bottom: 60px; }
+  .disabled_favorite a {
+    width: 100%;
+    display: block;
+    max-width: 250px;
+    margin: 0 auto;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    padding: 13px 10px;
+    border-radius: 3px;
+    font: 1.125rem "800"; }
 
 footer {
   margin-bottom: 15px;
