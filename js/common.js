@@ -28,3 +28,15 @@ function f_acc(){
     $('.accordeon .acc-body').not($(this).next()).slideUp(200).parent().children(".acc-head").removeClass('active_acc');
     $(this).toggleClass("active_acc").next().slideToggle(200);
 }
+
+var swiper = new Swiper(".clint_slider", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    slidesPerView: "auto",
+    grabCursor: true,
+    centeredSlides: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
