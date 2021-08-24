@@ -24,6 +24,7 @@
 
 .mfp-container {
     position: fixed!important;
+    overflow-y: scroll;
     ::-webkit-scrollbar {
         width: 0;
         height: 0;
@@ -38,12 +39,10 @@
 
 .item_modal {
     max-width: 360px;
-    margin: 0 auto;
+    margin: 20px auto;
     position: relative;
     background: #fff;
     padding-bottom: 35px;
-    height: 500px;
-    overflow-y: scroll;
     .swiper-pagination-bullet {
         height: 15px;
         width: 15px;

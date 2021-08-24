@@ -1192,7 +1192,8 @@ footer {
   footer .container {
     padding: 35px 0 25px 0; }
   footer .footer_logo {
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    height: 40px; }
   footer .newsletter_title {
     margin-bottom: 15px;
     color: #000;
@@ -1411,7 +1412,8 @@ footer {
     font: 1rem/115% "400"; }
 
 .mfp-container {
-  position: fixed !important; }
+  position: fixed !important;
+  overflow-y: scroll; }
   .mfp-container ::-webkit-scrollbar {
     width: 0;
     height: 0;
@@ -1423,12 +1425,10 @@ footer {
 
 .item_modal {
   max-width: 360px;
-  margin: 0 auto;
+  margin: 20px auto;
   position: relative;
   background: #fff;
-  padding-bottom: 35px;
-  height: 500px;
-  overflow-y: scroll; }
+  padding-bottom: 35px; }
   .item_modal .swiper-pagination-bullet {
     height: 15px;
     width: 15px;
