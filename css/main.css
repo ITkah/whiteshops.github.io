@@ -1686,11 +1686,14 @@ footer {
         height: 100%;
         text-align: center;
         border: none;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
+        background: transparent;
         -webkit-appearance: none;
            -moz-appearance: none;
                 appearance: none;
+        outline: none;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        appearance: none;
         outline: none; }
       .item_modal .item_modal_btn .select svg {
         position: absolute;
