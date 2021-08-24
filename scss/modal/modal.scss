@@ -22,12 +22,28 @@
     }
 }
 
+.mfp-container {
+    position: fixed!important;
+    ::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+    ::-webkit-thumb {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+}
+
 .item_modal {
     max-width: 360px;
     margin: 0 auto;
     position: relative;
     background: #fff;
     padding-bottom: 35px;
+    height: 500px;
+    overflow-y: scroll;
     .swiper-pagination-bullet {
         height: 15px;
         width: 15px;
@@ -249,7 +265,7 @@
             align-items: center;
             justify-content: center;
             select {
-                width: 20px;
+                width: 30px;
                 text-align: center;
                 font: 1.1rem "600";
                 height: 100%;

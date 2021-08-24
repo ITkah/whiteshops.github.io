@@ -367,6 +367,15 @@ nav {
       padding: 5px 10px;
       color: #fff;
       font: .65rem "800"; }
+    .item_output .item .item_wrap_img .delete_prod {
+      position: absolute;
+      right: 8px;
+      top: 5px;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+      cursor: pointer; }
     .item_output .item .item_wrap_img .favorite {
       position: absolute;
       right: 7px;
@@ -924,6 +933,9 @@ nav {
           color: #fff;
           padding-left: 30px;
           position: relative; }
+          .delivery .delivery_wrap .delivery_item ul li a {
+            text-decoration: underline;
+            font: 1.05rem/20px "600"; }
           .delivery .delivery_wrap .delivery_item ul li::after {
             content: url(../img/home/deliveri_circle.svg);
             position: absolute;
@@ -1398,12 +1410,25 @@ footer {
     text-align: center;
     font: 1rem/115% "400"; }
 
+.mfp-container {
+  position: fixed !important; }
+  .mfp-container ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none; }
+  .mfp-container ::-webkit-thumb {
+    width: 0;
+    height: 0;
+    display: none; }
+
 .item_modal {
   max-width: 360px;
   margin: 0 auto;
   position: relative;
   background: #fff;
-  padding-bottom: 35px; }
+  padding-bottom: 35px;
+  height: 500px;
+  overflow-y: scroll; }
   .item_modal .swiper-pagination-bullet {
     height: 15px;
     width: 15px;
@@ -1655,7 +1680,7 @@ footer {
           -ms-flex-pack: center;
               justify-content: center; }
       .item_modal .item_modal_btn .select select {
-        width: 20px;
+        width: 30px;
         text-align: center;
         font: 1.1rem "600";
         height: 100%;

@@ -148,6 +148,13 @@
                 color: #fff;
                 font: .65rem "800";
             }
+            .delete_prod {
+                position: absolute;
+                right: 8px;
+                top: 5px;
+                user-select: none;
+                cursor: pointer;
+            }
             .favorite {
                 position: absolute;
                 right: 7px;
@@ -693,6 +700,10 @@
                     color: #fff;
                     padding-left: 30px;
                     position: relative;
+                    a {
+                        text-decoration: underline;
+                        font: 1.05rem/20px "600";
+                    }
                     &::after {
                         content: url(../img/home/deliveri_circle.svg);
                         position: absolute;
