@@ -1,5 +1,15 @@
 header {
     border-bottom: 1px solid #A0A0A0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: #fff;
+    z-index: 99;
+}
+
+main {
+    margin-top: 65px;
 }
 
 .header_logo {

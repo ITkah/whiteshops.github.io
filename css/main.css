@@ -1,5 +1,14 @@
 header {
-  border-bottom: 1px solid #A0A0A0; }
+  border-bottom: 1px solid #A0A0A0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: #fff;
+  z-index: 99; }
+
+main {
+  margin-top: 65px; }
 
 .header_logo {
   display: -webkit-box;
@@ -464,7 +473,13 @@ nav {
       color: #000;
       padding: 8px;
       display: block;
-      font: .75rem "400"; }
+      font: .75rem "400";
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+      .item_output .item .item_btn a:first-child:hover {
+        background: #000;
+        color: #fff; }
     .item_output .item .item_btn a:last-child {
       background: #000;
       border-radius: 3px;
@@ -1029,7 +1044,8 @@ nav {
       bottom: 0; }
     .clients .clients_item .clients_item_sm {
       position: relative;
-      overflow: hidden; }
+      overflow: hidden;
+      height: 350px; }
     .clients .clients_item .clients_item_sm:nth-child(1) img {
       border-radius: 10px 0 0 10px; }
     .clients .clients_item .clients_item_sm:nth-child(1) span {
@@ -1227,10 +1243,20 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 15px 0;
+    position: relative;
     border-bottom: .5px solid #838383; }
     footer .footer_nav ul li a {
       font: .95rem "400";
       color: #000; }
+      footer .footer_nav ul li a::after {
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0; }
 
 .footer_bottom p {
   border-top: .5px solid #838383;

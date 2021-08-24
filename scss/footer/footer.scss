@@ -52,10 +52,21 @@ footer {
                 align-items: center;
                 justify-content: space-between;
                 padding: 15px 0;
+                position: relative;
                 border-bottom: .5px solid #838383;
                 a {
                     font: .95rem "400";
                     color: #000;
+                    &::after {
+                        content: '';
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                    }
                 }
             }
         }
