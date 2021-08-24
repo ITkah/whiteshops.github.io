@@ -63,14 +63,6 @@ footer {
 }
 
 .footer_bottom {
-    img {
-        max-width: 100%;
-        height: auto;
-        object-fit: contain;
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 10px;
-    }
     p {
         border-top: .5px solid #838383;
         padding: 10px;
@@ -194,4 +186,17 @@ footer {
 /* animate out */
 .my-mfp-slide-bottom.mfp-removing.mfp-bg {
 	opacity: 0;
+}
+
+.footer_icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    padding: 0 15px;
+    img {
+        max-width: 100%;
+        max-height: 60px;
+        object-fit: cover;
+    }
 }
