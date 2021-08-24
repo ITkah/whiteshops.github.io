@@ -8,6 +8,11 @@ $(".close_icon").on("click", function() {
     $(".bg").removeClass("bg_active");
 });
 
+$(".bg").on("click", function() {
+    $("nav").removeClass("nav_active");
+    $(".bg").removeClass("bg_active");
+});
+
 $(".favorite").on("click", function(e){
     e.preventDefault();
     $(this).toggleClass("favorite_active");
@@ -40,3 +45,61 @@ var swiper = new Swiper(".clint_slider", {
       clickable: true,
     },
   });
+
+  $('.popup-with-zoom-anim').magnificPopup({
+    type: 'inline',
+
+    fixedContentPos: false,
+    fixedBgPos: true,
+
+    overflowY: 'auto',
+
+    closeBtnInside: true,
+    preloader: false,
+    
+    midClick: true,
+    removalDelay: 300,
+    mainClass: 'my-mfp-zoom-in',
+});
+
+$(".newsletter_form").submit(function(e) {
+    e.preventDefault();
+    let form_data = $(this).serializeArray();
+    $.ajax({
+        type: "POST",
+        url: "../../mail-2.php",
+        data: form_data,
+        success: function(response) {
+            console.log(response);
+            $(".thank_click").click();
+        },
+        error: function(error) {
+            $(".thank_click").click();
+        }
+    });
+    return false;
+});
+
+$(".size_item").on("click", function(){
+    $(".size_item").removeClass("active");
+    $(this).addClass("active");
+});
+
+
+$(".item_btn .popup-with-zoom-anim").on("click", function(){
+    const swiper2 = new Swiper('.item_slider', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        grabCursor: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+          clickable: true,
+        },
+    });
+});
