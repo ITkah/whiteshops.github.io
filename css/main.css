@@ -1069,9 +1069,12 @@ nav {
       right: auto;
       border-radius: 0 8px 0 0; }
   .clients .clint_slider {
-    padding-bottom: 35px; }
+    position: relative;
+    padding-bottom: 40px; }
   .clients .swiper-container-horizontal > .swiper-pagination-bullets, .clients .swiper-pagination-custom, .clients .swiper-pagination-fraction {
-    bottom: 0; }
+    bottom: 0 !important; }
+  .clients .swiper-pagination {
+    bottom: 0 !important; }
 
 .gallery {
   padding: 20px 15px;
@@ -1185,6 +1188,153 @@ nav {
     padding: 13px 10px;
     border-radius: 3px;
     font: 1.125rem "800"; }
+
+.home_catalog_top {
+  margin-top: 20px;
+  margin-bottom: 35px; }
+
+.catalog_btn_wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px; }
+  .catalog_btn_wrap a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: rgba(193, 167, 144, 0.09);
+    border-radius: 3px;
+    text-align: center;
+    color: #C1A790;
+    text-align: center;
+    font: 1rem "400";
+    padding: 10px 0; }
+    .catalog_btn_wrap a svg {
+      margin-left: 7px; }
+  .catalog_btn_wrap .btn_catalog {
+    padding: 10px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    background: rgba(193, 167, 144, 0.09);
+    border-radius: 3px; }
+    .catalog_btn_wrap .btn_catalog svg {
+      position: absolute;
+      right: 10px; }
+    .catalog_btn_wrap .btn_catalog select {
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      border: none;
+      width: 75%;
+      margin: 0 auto;
+      display: block;
+      outline: none;
+      background: transparent;
+      font: .87rem "400";
+      color: #C1A790;
+      text-align: center;
+      margin: 0 auto;
+      -moz-text-align-last: center;
+           text-align-last: center;
+      display: block; }
+
+.coll_item {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #000;
+  font: .87rem "400"; }
+
+.old_price {
+  color: #929292;
+  text-decoration: line-through;
+  font: .87rem "600";
+  margin-left: 5px; }
+
+.add_other {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 220px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 3px;
+  font: .95rem "800";
+  color: #000;
+  margin-top: 40px; }
+
+.top_item {
+  margin-bottom: 150px; }
+  .top_item img {
+    width: 260px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 15px;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .top_item .top_title {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #000;
+    font: 1.25rem "800"; }
+  .top_item .top_text {
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    font: .87rem/16px "400"; }
+  .top_item .top_btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 220px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #000;
+    background: #000;
+    border-radius: 3px;
+    font: 1.05rem "800";
+    color: #fff; }
 
 footer {
   margin-bottom: 15px;
