@@ -1563,6 +1563,7 @@ footer {
 
 .mfp-container {
   position: fixed !important;
+  overflow: hidden;
   overflow-y: scroll; }
   .mfp-container ::-webkit-scrollbar {
     width: 0;
@@ -1574,11 +1575,14 @@ footer {
     display: none; }
 
 .item_modal {
+  overflow: hidden;
   max-width: 360px;
   margin: 20px auto;
   position: relative;
   background: #fff;
   padding-bottom: 35px; }
+  .item_modal .item_slider {
+    position: relative; }
   .item_modal .swiper-pagination-bullet {
     height: 15px;
     width: 15px;
