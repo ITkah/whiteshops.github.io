@@ -935,6 +935,7 @@ nav {
           position: relative; }
           .delivery .delivery_wrap .delivery_item ul li a {
             text-decoration: underline;
+            color: #fff;
             font: 1.05rem/20px "600"; }
           .delivery .delivery_wrap .delivery_item ul li::after {
             content: url(../img/home/deliveri_circle.svg);
