@@ -3,6 +3,12 @@ $(".menu").on("click", function() {
     $(".bg").addClass("bg_active");
 });
 
+$(".add_other_wrap a").on("click", function(e){
+    e.preventDefault();
+    $(this).addClass("hide");
+    $(".progress").show();
+});
+
 $(".close_icon").on("click", function() {
     $("nav").removeClass("nav_active");
     $(".bg").removeClass("bg_active");
@@ -23,7 +29,28 @@ $(".choice_color span").on("click", function(){
     $(this).addClass("color_active");
 });
 
+$(".choice_color_2 span").on("click", function(){
+    $(this).toggleClass("color_active");
+});
 
+$(".catalog_metka a").on("click", function(e){
+    e.preventDefault();
+    $(this).toggleClass("active_metka");
+});
+
+$(".catalog_btn_wrap a").on("click", function(e){
+    e.preventDefault();
+    $(".filter").addClass("filter_active");
+});
+
+$(".filter_close").on("click", function(e){
+    e.preventDefault();
+    $(".filter").removeClass("filter_active");
+});
+
+$(".area_item").on("click", function(){
+    $(this).toggleClass("area_item_active");
+});
 
 $(document).ready(function() {
 	$('.accordeon .acc-head').on('click', f_acc);
@@ -85,6 +112,9 @@ $(".size_item").on("click", function(){
     $(this).addClass("active");
 });
 
+$(".size_item_2").on("click", function(){
+    $(this).toggleClass("active");
+});
 
 $(".item_btn .popup-with-zoom-anim").on("click", function(){
     const swiper2 = new Swiper('.item_slider', {
@@ -103,3 +133,4 @@ $(".item_btn .popup-with-zoom-anim").on("click", function(){
         },
     });
 });
+
