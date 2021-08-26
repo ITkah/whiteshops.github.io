@@ -1,0 +1,256 @@
+.find_item {
+    margin-bottom: 50px;
+    background: url(../img/item/item_bg.png) no-repeat center center/cover;
+    .container {
+        padding: 50px 15px;
+    }
+    .find_title {
+        text-align: center;
+        font: 1.5rem "800";
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    .find_text {
+        color: #fff;
+        margin-bottom: 60px;
+        text-align: center;
+        font: .87rem/15px "600";
+    }
+    .find_btn {
+        max-width: 270px;
+        margin: 0 auto;
+        display: block;
+        border-radius: 3px;
+        background: #fff;
+        font: 1.4rem "600";
+        padding: 15px 10px;
+        text-align: center;
+        width: 100%;
+        color: #C1A790;
+    }
+}
+
+.question {
+    margin-bottom: 90px;
+    .question_wrap {
+        margin-bottom: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        @media (max-width: 320px) {
+            grid-template-columns: 1fr;
+        }
+        a {
+            font: 1rem "600";
+            text-align: center;
+            border: 1px solid #C1A790;
+            border-radius: 3px;
+            padding: 15px;
+            color: #fff;
+            background: #C1A790;
+        }
+        a:last-child {
+            color: #000;
+            background: transparent;
+        }
+    }
+}
+
+.tabs__content.active {
+    display: block; 
+}
+.tabs__content {
+    display: none; 
+}
+
+.tabs__caption {
+    display: grid;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #C5C5C5;
+    grid-template-columns: 1fr 1fr;
+    li {
+        text-align: center;color: #919191;
+        font: 1.125rem "600";
+        text-align: center;
+        span {
+            color: #919191;
+            font: .95rem "400";
+        }
+    }
+    .active {
+        color: #000;
+        position: relative;
+        &::after {
+            content: '';
+            height: 5px;
+            width: 100%;
+            position: absolute;
+            bottom: -11px;
+            left: 0;
+            background: #C1A790;
+        }
+    }
+}
+
+.question_wraps {
+    display: grid;
+    grid-template-columns: 1fr;
+    .feedback_item {
+        padding-left: 25px;
+    }
+    .question_item {
+        padding-bottom: 25px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #D9D9D9;
+        .question_item_title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            .name {
+                font: 1.125rem "600";
+            }
+            .admin {
+                color: #C1A790;
+            }
+            .data {
+                color: #7C7C7C;
+                font: .87rem "400";
+            }
+        }
+        .messages {
+            margin-bottom: 15px;
+            font: .8rem/120% "400";
+        }
+        .feedback {
+            color: #C1A790;
+            text-decoration-line: underline;
+            font: .8rem "400";
+        }
+    }
+}
+
+.reviews_wrap {
+    .reviews_item {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #D9D9D9;
+        .like_wrpa {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            a {
+                display: flex;
+                align-items: center;
+                margin-right: 10px;
+                color: #C1A790;
+                opacity: .5;
+                font: .87rem "400";
+                svg {
+                    height: 15px;
+                    width: 15px;
+                    margin-right: 5px;
+                }
+            }
+            .active {
+                opacity: 1;
+            }
+        }
+        .reviews_img_wrap {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 5px;
+            margin-bottom: 20px;
+            img {
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+        .reivews_box {
+            display: grid;
+            grid-template-columns: 1fr 120px;
+            grid-gap: 10px;
+            margin-bottom: 25px;
+            .reviews_text {
+                .subtitle {
+                    margin-bottom: 10px;
+                    font: .87rem "800";
+                }
+                .messages {
+                    margin-bottom: 15px;
+                    font: .8rem/120% "400";
+                }
+                a {
+                    color: #C1A790;
+                    text-decoration-line: underline;
+                    font: .8rem "400";
+                }
+            }
+            .reviews_img {
+                img {
+                    max-width: 100%;
+                    object-fit: cover;
+                    width: 100%;
+                    margin-bottom: 5px;
+                }
+                p {
+                    text-align: center;
+                    font: .87rem "400";
+                }
+            }
+        }
+        .reviews_item_title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            .name {
+                font: 1.125rem "600";
+            }
+            .admin {
+                color: #C1A790;
+            }
+            .data {
+                color: #7C7C7C;
+                font: .87rem "400";
+            }
+        }
+        .reviews_star {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            img {
+                margin-right: 3px;
+                height: 18px;
+                width: 18px;
+            }
+        }
+    }
+    .reviews_item:last-child {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.pagination {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+        a {
+            display: block;
+            padding: 10px 15px;
+            font: 1rem "600";
+            color: #000;
+        }
+    }
+    .active_link {
+        font: 1rem "900";
+        color: #C1A790;
+    }
+}

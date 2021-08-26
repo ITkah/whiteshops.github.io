@@ -3,6 +3,18 @@ $(".menu").on("click", function() {
     $(".bg").addClass("bg_active");
 });
 
+$(".like_wrpa a").on("click", function(e){
+    e.preventDefault();
+    $(".like_wrpa a").removeClass("active");
+    $(this).toggleClass("active");
+});
+
+$('ul.tabs__caption').on('click', 'li:not(.active)', function() {
+    $(this)
+      .addClass('active').siblings().removeClass('active')
+      .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+});
+
 $(".add_other_wrap a").on("click", function(e){
     e.preventDefault();
     $(this).addClass("hide");
