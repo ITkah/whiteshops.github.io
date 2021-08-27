@@ -29,6 +29,96 @@
     position: relative;
     border-radius: 15px;
     padding: 45px 20px;
+    .input_file {
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+        appearance: none;
+        outline: none;
+        border: 1px solid #000000;
+        border-radius: 3px;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        &::after {
+            content: '';
+            height: 100%;
+            width: 50px;
+            background: #fff;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 2;
+        }
+        label {
+            font: 1rem "400";
+            color: #959595;
+            width: 90%;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .black {
+            color: #000;
+        }
+        input {
+            position: absolute;
+            opacity: 0;
+            left: 0;
+            height: 100%;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        img {
+            position: absolute;
+            pointer-events: none;
+            right: 14px;
+            top: 14px;
+            z-index: 9;
+        }
+    }
+    .reviews_star {
+        margin-top: 10px;
+        margin-bottom: 25px;
+        p {
+            margin-bottom: 5px;
+            color: #000;
+            font: 1rem "800";
+        }
+        .rating-area {
+            overflow: hidden;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .rating-area:not(:checked) > input {
+            display: none;
+        }
+        .rating-area:not(:checked) > label {
+            width: 18.5px;
+            height: 18.5px;
+            margin-right: 4px;
+            padding: 0;
+        }
+        .rating-area:not(:checked) > label:before {
+            content: url(../img/item/star_disabled.svg);
+            height: 18.5px;
+            display: block;
+            width: 18.5px;
+        }
+        .rating-area > input:checked ~ label {
+            content: url(../img/item/star.svg);
+            height: 18.5px;
+            display: block;
+            position: relative;
+            top: -1px;
+            width: 18.5px;
+        }
+    }
     .admission_title {
         text-align: left;
         margin-bottom: 15px;
@@ -52,12 +142,16 @@
             font: 1rem "400";
             border: 1px solid #000000;
             border-radius: 3px;
+            width: 100%;
+            box-sizing: border-box;
         }
         textarea {
             color: #000;
             height: 105px;
             padding: 15px;
             appearance: none;
+            width: 100%;
+            box-sizing: border-box;
             outline: none;
             font: 1rem "400";
             border: 1px solid #000000;
@@ -65,6 +159,8 @@
         }
         button {
             border: none;
+            width: 100%;
+            box-sizing: border-box;
             padding: 15px 10px;
             text-align: center;
             color: #fff;
