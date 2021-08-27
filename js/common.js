@@ -3,6 +3,32 @@ $(".menu").on("click", function() {
     $(".bg").addClass("bg_active");
 });
 
+$(".modal_size").on("click", function(e){
+    e.preventDefault();
+    $(".modal_table_wrappers").addClass("modal_table_wrappers_active");
+});
+
+$(".close_table").on("click", function(){
+    $(".modal_table_wrappers").removeClass("modal_table_wrappers_active");
+});
+
+$(".item_img a").on("click", function(e){
+    e.preventDefault();
+    $(".modal_landing_wrappers").addClass("modal_landing_wrappers_active");
+});
+
+$(".close_landing").on("click", function(){
+    $(".modal_landing_wrappers").removeClass("modal_landing_wrappers_active");
+});
+
+$(".size_big").on("click", function(){
+    $(".modal_size_wrappers").addClass("modal_size_wrappers_active");
+});
+
+$(".close_size").on("click", function(){
+    $(".modal_size_wrappers").removeClass("modal_size_wrappers_active");
+});
+
 $(".like_wrpa a").on("click", function(e){
     e.preventDefault();
     $(".like_wrpa a").removeClass("active");
@@ -119,6 +145,7 @@ $(".newsletter_form").submit(function(e) {
     return false;
 });
 
+
 $(".size_item").on("click", function(){
     $(".size_item").removeClass("active");
     $(this).addClass("active");
@@ -139,8 +166,8 @@ $(".item_btn .popup-with-zoom-anim").on("click", function(){
           clickable: true,
         },
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.item_slider .swiper-button-next',
+          prevEl: '.item_slider .swiper-button-prev',
           clickable: true,
         },
     });
@@ -148,3 +175,36 @@ $(".item_btn .popup-with-zoom-anim").on("click", function(){
 
 
 
+const swiper3 = new Swiper('.item_slider_2', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    grabCursor: true,
+    pagination: {
+      el: '.item_slider_2 .swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.item_slider_2 .swiper-button-next',
+      prevEl: '.item_slider_2 .swiper-button-prev',
+      clickable: true,
+    },
+});
+
+
+$(".reviews_img_wrap a").on("click", function(){
+    const swiper4 = new Swiper('.item_slider_3', {
+        loop: true,
+        slidesPerView: 1,
+        grabCursor: true,
+        pagination: {
+          el: '.item_slider_3 .swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.item_slider_3 .swiper-button-next',
+          prevEl: '.item_slider_3 .swiper-button-prev',
+          clickable: true,
+        },
+    }); 
+});
