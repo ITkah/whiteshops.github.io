@@ -1362,30 +1362,47 @@ nav {
       -o-object-fit: cover;
          object-fit: cover; }
   .reviews_wrap .reviews_item .reivews_box {
-    display: grid;
-    grid-template-columns: 1fr 120px;
-    grid-gap: 10px;
     margin-bottom: 25px; }
     .reviews_wrap .reviews_item .reivews_box .reviews_text .subtitle {
       margin-bottom: 10px;
       font: .87rem "800"; }
     .reviews_wrap .reviews_item .reivews_box .reviews_text .messages {
       margin-bottom: 15px;
-      font: .8rem/120% "400"; }
+      min-height: 210px; }
+      .reviews_wrap .reviews_item .reivews_box .reviews_text .messages .messages_item {
+        font: .8rem/120% "400";
+        height: 108px;
+        overflow: hidden; }
+      .reviews_wrap .reviews_item .reivews_box .reviews_text .messages .messages_item_active {
+        height: 100%;
+        overflow: initial; }
     .reviews_wrap .reviews_item .reivews_box .reviews_text a {
       color: #C1A790;
       -webkit-text-decoration-line: underline;
               text-decoration-line: underline;
-      font: .8rem "400"; }
-    .reviews_wrap .reviews_item .reivews_box .reviews_img img {
-      max-width: 100%;
-      -o-object-fit: cover;
-         object-fit: cover;
-      width: 100%;
-      margin-bottom: 5px; }
-    .reviews_wrap .reviews_item .reivews_box .reviews_img p {
-      text-align: center;
-      font: .87rem "400"; }
+      font: .8rem "400";
+      margin-top: 10px;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+      outline: none;
+      display: block; }
+    .reviews_wrap .reviews_item .reivews_box .reviews_img {
+      float: right;
+      margin-left: 20px;
+      margin-bottom: 10px;
+      width: 140px;
+      height: 210px; }
+      .reviews_wrap .reviews_item .reivews_box .reviews_img img {
+        max-width: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        width: 100%;
+        margin-bottom: 5px; }
+      .reviews_wrap .reviews_item .reivews_box .reviews_img p {
+        text-align: center;
+        font: .87rem "400"; }
   .reviews_wrap .reviews_item .reviews_item_title {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2216,9 +2233,14 @@ nav {
   .item_output_page .item_wrap .item {
     display: block;
     margin-right: 3.5px;
-    width: 180px;
-    min-width: 160px;
-    max-width: 160px; }
+    width: 190px;
+    min-width: 190px;
+    max-width: 190px; }
+    @media (max-width: 375px) {
+      .item_output_page .item_wrap .item {
+        width: 160px;
+        min-width: 160px;
+        max-width: 160px; } }
 
 .home_catalog_top {
   margin-top: 20px;
@@ -2937,31 +2959,49 @@ footer {
     .form_modal .input_file::after {
       content: '';
       height: 100%;
-      width: 50px;
+      width: 60px;
       background: #fff;
       position: absolute;
       right: 0;
       top: 0;
       bottom: 0;
       z-index: 2; }
-    .form_modal .input_file label {
+    .form_modal .input_file .file_label {
       font: 1rem "400";
       color: #959595;
       width: 90%;
       overflow: hidden;
       -webkit-box-sizing: border-box;
-              box-sizing: border-box; }
+              box-sizing: border-box;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .form_modal .input_file .file_label span {
+        height: 15px;
+        width: 15px;
+        display: inline-block;
+        position: relative;
+        z-index: 9; }
+        .form_modal .input_file .file_label span::after {
+          content: url(../img/modal/del.svg);
+          position: relative;
+          margin-left: 7px; }
     .form_modal .input_file .black {
       color: #000; }
     .form_modal .input_file input {
       position: absolute;
       opacity: 0;
-      left: 0;
-      height: 100%;
       right: 0;
+      z-index: 99;
+      height: 100%;
       top: 0;
       bottom: 0;
-      width: 100%; }
+      width: 60px; }
     .form_modal .input_file img {
       position: absolute;
       pointer-events: none;

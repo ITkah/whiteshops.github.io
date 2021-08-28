@@ -170,9 +170,6 @@
             }
         }
         .reivews_box {
-            display: grid;
-            grid-template-columns: 1fr 120px;
-            grid-gap: 10px;
             margin-bottom: 25px;
             .reviews_text {
                 .subtitle {
@@ -181,15 +178,33 @@
                 }
                 .messages {
                     margin-bottom: 15px;
-                    font: .8rem/120% "400";
+                    min-height: 210px;
+                    .messages_item {
+                        font: .8rem/120% "400";
+                        height: 108px;
+                        overflow: hidden;
+                    }
+                    .messages_item_active {
+                        height: 100%;
+                        overflow: initial;
+                    }
                 }
                 a {
                     color: #C1A790;
                     text-decoration-line: underline;
                     font: .8rem "400";
+                    margin-top: 10px;
+                    user-select: none;
+                    outline: none;
+                    display: block;
                 }
             }
             .reviews_img {
+                float: right;
+                margin-left: 20px;
+                margin-bottom: 10px;
+                width: 140px;
+                height: 210px;
                 img {
                     max-width: 100%;
                     object-fit: cover;
@@ -986,9 +1001,14 @@
         .item {
             display: block;
             margin-right: 3.5px;
-            width: 180px;
-            min-width: 160px;
-            max-width: 160px;
+            width: 190px;
+            min-width: 190px;
+            max-width: 190px;
+            @media (max-width: 375px) {
+                width: 160px;
+                min-width: 160px;
+                max-width: 160px;
+            }
         }
     }
 }

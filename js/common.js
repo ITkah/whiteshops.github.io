@@ -5,9 +5,29 @@ $(".menu").on("click", function() {
 
 $('.file').change(function() {
     $file = $(this).val();
-    $file = $file.replace(/.*[\/\\]/, ''); //grab only the file name not the path
-    $('.file_label').addClass("black").text($file);
-})
+    $file = $file.replace(/.*[\/\\]/, '');
+    if ($file == "") {
+        $(".file_label").text("Прикрепить файл").removeClass("black");
+    } else {
+        $('.file_label').addClass("black").html("<p>" + $file + "<span></span></p>");
+    }
+    $(".file_label span").on("click", function(){
+        $(this).parent().remove();
+        $(".file_label").text("Прикрепить файл").removeClass("black");
+    });
+});
+
+$.fn.extend({
+    toggleText: function(a, b){
+        return this.text(this.text() == b ? a : b);
+    }
+});
+
+
+$(".show_mes").on("click", function(e){
+    e.preventDefault();
+    $(this).toggleText("Читать далее", "Скрыть отзыв").siblings("p").toggleClass("messages_item_active");
+});
 
 
 $(".like_wrpa a").on("click", function(e){
