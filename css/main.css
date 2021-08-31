@@ -2984,7 +2984,6 @@ nav {
         display: none; }
       .bug_page .bug_item_wrap .bug_item_info .bug_attr select {
         margin-left: 5px;
-        outline: none;
         background: none;
         border: none;
         color: #929292;
