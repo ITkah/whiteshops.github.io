@@ -2980,12 +2980,10 @@ nav {
         -webkit-appearance: none;
            -moz-appearance: none;
                 appearance: none;
-        pointer-events: none; }
+        pointer-events: none;
+        display: none; }
       .bug_page .bug_item_wrap .bug_item_info .bug_attr select {
         margin-left: 5px;
-        -webkit-appearance: none;
-           -moz-appearance: none;
-                appearance: none;
         outline: none;
         background: none;
         border: none;
