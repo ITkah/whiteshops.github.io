@@ -2980,14 +2980,19 @@ nav {
         -webkit-appearance: none;
            -moz-appearance: none;
                 appearance: none;
-        pointer-events: none;
-        display: none; }
+        pointer-events: none; }
       .bug_page .bug_item_wrap .bug_item_info .bug_attr select {
         margin-left: 5px;
         background: none;
         border: none;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+        outline: none;
         color: #929292;
-        font: .75rem "400"; }
+        font: .75rem "400";
+        margin-left: -35px;
+        padding-left: 40px; }
     .bug_page .bug_item_wrap .bug_item_info .bug_price {
       margin-top: 15px;
       color: #000;

@@ -240,14 +240,17 @@
                     margin-left: 5px;
                     appearance: none;
                     pointer-events: none;
-                    display: none;
                 }
                 select {
                     margin-left: 5px;
                     background: none;
                     border: none;
+                    appearance: none;
+                    outline: none;
                     color: #929292;
                     font: .75rem "400";
+                    margin-left: -35px;
+                    padding-left: 40px;
                 }
             }
             .bug_price {
