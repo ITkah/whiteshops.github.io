@@ -2799,6 +2799,8 @@ nav {
       border-radius: 3px; }
     .bug_header .bug_item_wrap .bug_item_info .bug_title {
       margin-bottom: 5px;
+      color: #000;
+      display: block;
       font: .87rem "600"; }
     .bug_header .bug_item_wrap .bug_item_info .bug_attr {
       margin-bottom: 5px;
@@ -2850,7 +2852,9 @@ nav {
         -ms-flex-pack: justify;
             justify-content: space-between; }
     .bug_page .bug_page_title .bug_title {
-      font: 1.5rem "800"; }
+      font: 1.5rem "800";
+      color: #000;
+      display: block; }
     .bug_page .bug_page_title .bug_coll {
       font: .87rem "400"; }
   .bug_page .bug_all {
@@ -2954,7 +2958,9 @@ nav {
       border-radius: 3px; }
     .bug_page .bug_item_wrap .bug_item_info .bug_title {
       margin-bottom: 5px;
-      font: .87rem "600"; }
+      font: .87rem "600";
+      color: #000;
+      display: block; }
     .bug_page .bug_item_wrap .bug_item_info .bug_attr:nth-child(3) {
       margin-top: 10px; }
     .bug_page .bug_item_wrap .bug_item_info .bug_attr {
@@ -3023,6 +3029,8 @@ nav {
   .bug_order_wrap .bug_order_item {
     background: rgba(193, 167, 144, 0.15);
     display: grid;
+    height: 255px;
+    max-height: 255px;
     border-radius: 5px;
     grid-template-columns: 120px 1fr;
     overflow: hidden; }
@@ -3104,9 +3112,13 @@ nav {
           border: .5px solid #000; }
       .bug_order_wrap .bug_order_item .bug_order_info .order_size_wrap {
         display: grid;
-        grid-template-columns: 110px 1fr;
-        grid-gap: 10px;
+        grid-template-columns: 120px 1fr;
+        grid-gap: 15px;
         margin-bottom: 20px; }
+        @media (max-width: 576px) {
+          .bug_order_wrap .bug_order_item .bug_order_info .order_size_wrap {
+            grid-gap: 10px;
+            grid-template-columns: 110px 1fr; } }
         .bug_order_wrap .bug_order_item .bug_order_info .order_size_wrap select {
           font: .75rem "800";
           padding: 3px 10px;
@@ -3123,10 +3135,10 @@ nav {
           display: -webkit-flex;
           display: -ms-flexbox;
           display: flex;
-          -webkit-box-pack: center;
-          -webkit-justify-content: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
+          -webkit-box-pack: end;
+          -webkit-justify-content: flex-end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end;
           -webkit-align-content: center;
               -ms-flex-line-pack: center;
                   align-content: center; }
@@ -3137,6 +3149,7 @@ nav {
             position: relative;
             top: 5px;
             height: 12px;
+            width: 12px;
             margin-right: 5px; }
       .bug_order_wrap .bug_order_item .bug_order_info .item_modal_btn {
         display: grid;

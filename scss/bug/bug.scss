@@ -66,6 +66,8 @@
         .bug_item_info {
             .bug_title {
                 margin-bottom: 5px;
+                color: #000;
+                display: block;
                 font: .87rem "600";
             }
             .bug_attr {
@@ -119,6 +121,8 @@
         justify-content: space-between;
         .bug_title {
             font: 1.5rem "800";
+            color: #000;
+            display: block;
         }
         .bug_coll {
             font: .87rem "400";
@@ -220,6 +224,8 @@
             .bug_title {
                 margin-bottom: 5px;
                 font: .87rem "600";
+                color: #000;
+                display: block;
             }
             .bug_attr:nth-child(3) {
                 margin-top: 10px;
@@ -281,6 +287,8 @@
     .bug_order_item {
         background: rgba(193, 167, 144, 0.15);
         display: grid;
+        height: 255px;
+        max-height: 255px;
         border-radius: 5px;
         grid-template-columns: 120px 1fr;
         overflow: hidden;
@@ -353,9 +361,13 @@
             }
             .order_size_wrap {
                 display: grid;
-                grid-template-columns: 110px 1fr;
-                grid-gap: 10px;
+                grid-template-columns: 120px 1fr;
+                grid-gap: 15px;
                 margin-bottom: 20px;
+                @media (max-width: 576px) {
+                    grid-gap: 10px;
+                    grid-template-columns: 110px 1fr;
+                }
                 select {
                     font: .75rem "800";
                     padding: 3px 10px;
@@ -370,7 +382,7 @@
                     font: .6rem "600";
                     color: #000;
                     display: flex;
-                    justify-content: center;
+                    justify-content: flex-end;
                     align-content: center;
                     img {
                         display: block;
@@ -378,6 +390,7 @@
                         position: relative;
                         top: 5px;
                         height: 12px;
+                        width: 12px;
                         margin-right: 5px;
                     }
                 }
