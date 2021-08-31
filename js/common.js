@@ -3,6 +3,16 @@ $(".menu").on("click", function() {
     $(".bg").addClass("bg_active");
 });
 
+$(".bug_call").on("click", function(e){
+    e.preventDefault();
+    $(".bug_header").slideToggle(200);
+});
+
+$(".close_bug").on("click", function(e){
+    e.preventDefault();
+    $(".bug_header").slideUp(200);
+});
+
 $('.file').change(function() {
     $file = $(this).val();
     $file = $file.replace(/.*[\/\\]/, '');
@@ -56,6 +66,25 @@ $(".close_icon").on("click", function() {
 $(".bg").on("click", function() {
     $("nav").removeClass("nav_active");
     $(".bg").removeClass("bg_active");
+});
+
+$(".call_adress_1").on("click", function(e){
+    $(".address_show").attr("href", "#adress_1")
+});
+
+$(".call_adress_2").on("click", function(e){
+    $(".address_show").attr("href", "#adress_2")
+});
+
+$(".call_adress_3").on("click", function(e){
+    $(".address_show").attr("href", "#adress_3")
+});
+
+
+$(".promo_call").on("click", function(e){
+    e.preventDefault();
+    $(this).toggleClass("active_li");
+    $(".promo_form").slideToggle(200);
 });
 
 $(".favorite").on("click", function(e){
@@ -227,4 +256,14 @@ $(".size_big").on("click", function(){
           clickable: true,
         },
     });
+});
+
+
+const swiper_bug = new Swiper('.swiper_bug', {
+    loop: true,
+    spaceBetween: 10,
+    pagination: {
+      el: '.swiper_bug .swiper-pagination',
+      clickable: true,
+    },
 });
