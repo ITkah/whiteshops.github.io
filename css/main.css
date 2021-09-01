@@ -5200,6 +5200,8 @@ footer {
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center; }
+    .lk_modal_eddit .form_edit_pass .eye_acti {
+      opacity: .6; }
     .lk_modal_eddit .form_edit_pass .red {
       border-color: #CD0404; }
     .lk_modal_eddit .form_edit_pass .change_pass {

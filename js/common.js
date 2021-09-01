@@ -188,6 +188,16 @@ $(".day_item").on("click", function(){
     $(this).toggleClass("day_item_active");
 });
 
+$(".eye").on("click", function(){
+    $(this).toggleClass("eye_acti");
+    var input = $(this).siblings("input");
+    if ($(input).attr('type') == 'password'){
+		$(input).attr('type', 'text');
+	} else {
+		$(input).attr('type', 'password');
+	}
+});
+
 $(".form_mail").submit(function(e) {
     e.preventDefault();
     let form_data = $(this).serializeArray();
