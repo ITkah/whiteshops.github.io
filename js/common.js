@@ -177,6 +177,54 @@ $(".newsletter_form").submit(function(e) {
     return false;
 });
 
+$(".adress_btn").on("click", function(e){
+    e.preventDefault();
+    $(".adress_btn").removeClass("adress_btn_active");
+    $(this).toggleClass("adress_btn_active");
+});
+
+$(".day_item").on("click", function(){
+    $(".day_item").removeClass("day_item_active");
+    $(this).toggleClass("day_item_active");
+});
+
+$(".form_mail").submit(function(e) {
+    e.preventDefault();
+    let form_data = $(this).serializeArray();
+    $.ajax({
+        type: "POST",
+        url: "../../mail-2.php",
+        data: form_data,
+        success: function(response) {
+            console.log(response);
+            $(".lk_modal_code").click();
+        },
+        error: function(error) {
+            $(".lk_modal_code").click();
+        }
+    });
+    return false;
+});
+
+
+$(".form_phone").submit(function(e) {
+    e.preventDefault();
+    let form_data = $(this).serializeArray();
+    $.ajax({
+        type: "POST",
+        url: "../../mail-2.php",
+        data: form_data,
+        success: function(response) {
+            console.log(response);
+            $(".lk_modal_code_phone").click();
+        },
+        error: function(error) {
+            $(".lk_modal_code_phone").click();
+        }
+    });
+    return false;
+});
+
 
 $(".size_item").on("click", function(){
     $(".size_item").removeClass("active");

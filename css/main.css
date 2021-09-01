@@ -3673,6 +3673,363 @@ nav {
   font: .87rem "600";
   text-align: center; }
 
+.lk_wrap .lk_title {
+  font: 1.75rem "800";
+  margin-bottom: 10px; }
+
+.lk_wrap .lk_name {
+  font: 1.125rem "600";
+  margin-bottom: 25px; }
+  .lk_wrap .lk_name span {
+    color: #bc938b; }
+
+.lk_wrap .acc_box {
+  padding-bottom: 15px;
+  position: relative;
+  margin-bottom: 15px; }
+  .lk_wrap .acc_box::after {
+    content: '';
+    background: #D9D9D9;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .lk_wrap .acc_box .acc-head {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .lk_wrap .acc_box .acc-head p {
+      font: 1.125rem "600"; }
+    .lk_wrap .acc_box .acc-head svg {
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+  .lk_wrap .acc_box .active_acc svg {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  .lk_wrap .acc_box .acc-body {
+    position: relative;
+    margin: 25px 0; }
+    .lk_wrap .acc_box .acc-body .user_data {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 10px; }
+      .lk_wrap .acc_box .acc-body .user_data .input_box {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        position: relative; }
+        .lk_wrap .acc_box .acc-body .user_data .input_box a {
+          position: absolute;
+          height: 45px;
+          right: 0;
+          width: 40px;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          top: 0; }
+        .lk_wrap .acc_box .acc-body .user_data .input_box input {
+          width: 100%;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          padding: 12px 11px;
+          border: 1px solid #000;
+          border-radius: 4px;
+          font: 1rem "600"; }
+    .lk_wrap .acc_box .acc-body .password {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      border-radius: 4px;
+      border: 1px solid #000;
+      text-align: center;
+      padding: 12px;
+      font: 1.2rem "600";
+      text-align: center;
+      color: #000; }
+
+.lk_wrap .lk_adress_wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px; }
+  .lk_wrap .lk_adress_wrap .lk_adress_item {
+    display: grid;
+    grid-template-columns: 27px 1fr;
+    grid-gap: 15px; }
+    .lk_wrap .lk_adress_wrap .lk_adress_item .adress_btn {
+      height: 27px;
+      width: 27px;
+      border-radius: 50%;
+      border: 1px solid #000;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .lk_wrap .lk_adress_wrap .lk_adress_item .adress_btn span {
+        opacity: 0;
+        height: 17px;
+        width: 17px;
+        border-radius: 50%;
+        background: #C1A790; }
+    .lk_wrap .lk_adress_wrap .lk_adress_item .adress_btn_active {
+      border: 1px solid #C1A790; }
+      .lk_wrap .lk_adress_wrap .lk_adress_item .adress_btn_active span {
+        opacity: 1; }
+    .lk_wrap .lk_adress_wrap .lk_adress_item .adress_info {
+      position: relative; }
+      .lk_wrap .lk_adress_wrap .lk_adress_item .adress_info .delete_adress {
+        position: absolute;
+        right: 0;
+        top: 0; }
+      .lk_wrap .lk_adress_wrap .lk_adress_item .adress_info .stable {
+        margin-bottom: 5px;
+        font: .87rem "600";
+        color: #C1A790; }
+      .lk_wrap .lk_adress_wrap .lk_adress_item .adress_info .adress_title {
+        font: 1rem "600";
+        margin-bottom: 10px;
+        max-width: 220px; }
+      .lk_wrap .lk_adress_wrap .lk_adress_item .adress_info .adress_text {
+        font: .75rem "400";
+        margin-bottom: 10px;
+        max-width: 270px; }
+      .lk_wrap .lk_adress_wrap .lk_adress_item .adress_info .adress_link {
+        color: #848484;
+        text-decoration: underline;
+        font: .87rem "400"; }
+
+.lk_wrap .add_btn {
+  margin-top: 30px;
+  font: 1.2rem "600";
+  background: #000;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 15px; }
+
+.lk_wrap .none_order {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .lk_wrap .none_order p {
+    font: 1rem "400";
+    margin-bottom: 30px; }
+  .lk_wrap .none_order a {
+    font: 1.2rem "600";
+    background: #000;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 15px; }
+
+.lk_wrap .lk_order_wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px; }
+  .lk_wrap .lk_order_wrap .lk_order_item {
+    background: #F8F8F8;
+    border-radius: 10px;
+    padding: 15px; }
+    .lk_wrap .lk_order_wrap .lk_order_item .lk_order_top {
+      margin-bottom: 20px; }
+      .lk_wrap .lk_order_wrap .lk_order_item .lk_order_top .lk_num {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        margin-bottom: 5px; }
+        .lk_wrap .lk_order_wrap .lk_order_item .lk_order_top .lk_num p:first-child {
+          font: 1.125rem "800";
+          color: #9F5025; }
+        .lk_wrap .lk_order_wrap .lk_order_item .lk_order_top .lk_num p:last-child {
+          font: .87rem "600";
+          color: #000; }
+      .lk_wrap .lk_order_wrap .lk_order_item .lk_order_top .status_text {
+        font: .87rem "800";
+        margin-bottom: 20px; }
+      .lk_wrap .lk_order_wrap .lk_order_item .lk_order_top .status_btn {
+        font: .7rem "600";
+        text-align: center;
+        color: #fff;
+        padding: 4px 10px;
+        background: -webkit-gradient(linear, left bottom, left top, from(#EB9B00), to(#EB9B00)), #FFFFFF;
+        background: -o-linear-gradient(bottom, #EB9B00, #EB9B00), #FFFFFF;
+        background: linear-gradient(0deg, #EB9B00, #EB9B00), #FFFFFF;
+        border-radius: 2px;
+        max-width: 80px; }
+      .lk_wrap .lk_order_wrap .lk_order_item .lk_order_top .green {
+        background: -webkit-gradient(linear, left bottom, left top, from(#05913D), to(#05913D)), #FFFFFF;
+        background: -o-linear-gradient(bottom, #05913D, #05913D), #FFFFFF;
+        background: linear-gradient(0deg, #05913D, #05913D), #FFFFFF; }
+    .lk_wrap .lk_order_wrap .lk_order_item .lk_info_wrap {
+      margin-bottom: 25px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 12px; }
+      .lk_wrap .lk_order_wrap .lk_order_item .lk_info_wrap .lk_info_item {
+        display: grid;
+        grid-template-columns: 1fr 65px;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        grid-gap: 10px; }
+        .lk_wrap .lk_order_wrap .lk_order_item .lk_info_wrap .lk_info_item p {
+          font: .95rem "400";
+          color: #626262; }
+          .lk_wrap .lk_order_wrap .lk_order_item .lk_info_wrap .lk_info_item p span {
+            color: #000; }
+        .lk_wrap .lk_order_wrap .lk_order_item .lk_info_wrap .lk_info_item a {
+          -webkit-text-decoration-line: underline;
+                  text-decoration-line: underline;
+          color: #C1A790;
+          text-align: right;
+          font: .7rem "400"; }
+    .lk_wrap .lk_order_wrap .lk_order_item .lk_img_wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 20px;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #888888; }
+      .lk_wrap .lk_order_wrap .lk_order_item .lk_img_wrap img {
+        max-width: 100%;
+        height: auto;
+        -o-object-fit: cover;
+           object-fit: cover;
+        height: 95px;
+        width: 100%; }
+    .lk_wrap .lk_order_wrap .lk_order_item .lk_price_all {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 5px; }
+      .lk_wrap .lk_order_wrap .lk_order_item .lk_price_all .lk_price_item {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .lk_wrap .lk_order_wrap .lk_order_item .lk_price_all .lk_price_item p {
+          font: 1rem "800"; }
+      .lk_wrap .lk_order_wrap .lk_order_item .lk_price_all .lk_price_item:last-child p {
+        font: 1rem "400"; }
+    .lk_wrap .lk_order_wrap .lk_order_item .order_main_btn {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+      margin-bottom: 10px;
+      margin-top: 50px; }
+      .lk_wrap .lk_order_wrap .lk_order_item .order_main_btn a {
+        background: transparent;
+        text-align: center;
+        border-radius: 4px;
+        border: 1px solid #000;
+        padding: 5px;
+        font: 1.25rem "600";
+        height: 40px;
+        color: #000;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .lk_wrap .lk_order_wrap .lk_order_item .order_main_btn a img {
+          height: 35px;
+          margin-left: 5px; }
+      .lk_wrap .lk_order_wrap .lk_order_item .order_main_btn a:first-child {
+        background: #000;
+        color: #fff; }
+      .lk_wrap .lk_order_wrap .lk_order_item .order_main_btn a:last-child img {
+        position: relative;
+        top: 2px; }
+    .lk_wrap .lk_order_wrap .lk_order_item .lk_order_bottom {
+      margin-top: 20px;
+      text-align: center;
+      color: #000;
+      display: block;
+      font: .87rem "800"; }
+      .lk_wrap .lk_order_wrap .lk_order_item .lk_order_bottom a {
+        text-decoration: underline;
+        display: block;
+        color: #000; }
+
+.lk_wrap .exit {
+  font: 1rem "600";
+  color: #000;
+  display: block;
+  margin-top: 25px; }
+
 footer {
   margin-bottom: 15px;
   background: rgba(248, 248, 248, 0.75); }
@@ -4554,6 +4911,314 @@ footer {
       width: 100%;
       -o-object-fit: cover;
          object-fit: cover; }
+
+.eddit_adress {
+  position: relative;
+  padding: 40px 20px;
+  background: #fff;
+  border-radius: 15px;
+  max-width: 345px;
+  margin: 0 auto; }
+  .eddit_adress .eddit_adress_title {
+    font: 1.2rem "800";
+    margin-bottom: 25px; }
+  .eddit_adress .eddit_adress_form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    /*Outer box of the fake checkbox*/
+    /*Checkmark of the fake checkbox*/
+    /*Hide the checkmark by default*/
+    /*Unhide on the checked state*/
+    /*Outer box of the fake checkbox*/
+    /*Checkmark of the fake checkbox*/
+    /*Hide the checkmark by default*/
+    /*Unhide on the checked state*/ }
+    .eddit_adress .eddit_adress_form input {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 12px 11px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      font: 1rem "600"; }
+    .eddit_adress .eddit_adress_form .radio input[type="radio"] {
+      opacity: 0;
+      position: absolute; }
+    .eddit_adress .eddit_adress_form .radio {
+      margin-bottom: 15px; }
+    .eddit_adress .eddit_adress_form .eddit_day_wrap {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 10px;
+      overflow-y: scroll;
+      width: 100%; }
+      .eddit_adress .eddit_adress_form .eddit_day_wrap .day_item {
+        width: 70px;
+        min-width: 70px;
+        max-width: 70px;
+        border-radius: 15px;
+        border: 1px solid #929292;
+        border-radius: 3px;
+        height: 30px;
+        margin-right: 10px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding: 10px; }
+        .eddit_adress .eddit_adress_form .eddit_day_wrap .day_item p {
+          text-align: center;
+          font: .87rem "600";
+          color: #000; }
+          .eddit_adress .eddit_adress_form .eddit_day_wrap .day_item p span {
+            color: #929292;
+            display: block;
+            font: .7rem "600"; }
+      .eddit_adress .eddit_adress_form .eddit_day_wrap .day_item:last-child {
+        margin: 0; }
+      .eddit_adress .eddit_adress_form .eddit_day_wrap .day_item_active {
+        border-color: #C1A790;
+        background: rgba(180, 134, 125, 0.08); }
+    .eddit_adress .eddit_adress_form .radio label {
+      position: relative;
+      display: inline-block;
+      padding-left: 32px;
+      font: 1.1rem "600"; }
+      .eddit_adress .eddit_adress_form .radio label span {
+        margin-left: 10px;
+        color: #676767;
+        font: .87rem "600"; }
+    .eddit_adress .eddit_adress_form .radio label::before,
+    .eddit_adress .eddit_adress_form .radio label::after {
+      position: absolute;
+      content: "";
+      /*Needed for the line-height to take effect*/
+      display: inline-block; }
+    .eddit_adress .eddit_adress_form .radio label::before {
+      height: 22px;
+      width: 22px;
+      border-radius: 50%;
+      border: 1px solid #000;
+      left: 0px;
+      top: -2px; }
+    .eddit_adress .eddit_adress_form .radio label::after {
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      background: #C1A790;
+      left: 4px;
+      top: 2px; }
+    .eddit_adress .eddit_adress_form .radio input[type="radio"] + label::after {
+      content: none; }
+    .eddit_adress .eddit_adress_form .radio input[type="radio"]:checked + label::after {
+      content: ""; }
+    .eddit_adress .eddit_adress_form .input_group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px; }
+    .eddit_adress .eddit_adress_form .input_box {
+      position: relative; }
+      .eddit_adress .eddit_adress_form .input_box svg, .eddit_adress .eddit_adress_form .input_box img {
+        position: absolute;
+        right: 10px;
+        top: 12.5px; }
+    .eddit_adress .eddit_adress_form select {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 12px 11px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      font: 1rem "600"; }
+    .eddit_adress .eddit_adress_form textarea {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 12px 11px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      font: 1rem "600";
+      height: 150px; }
+    .eddit_adress .eddit_adress_form button {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 12px 11px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      font: 1.125rem "600";
+      background: #000;
+      color: #fff; }
+    .eddit_adress .eddit_adress_form .checkbox input[type="checkbox"] {
+      opacity: 0;
+      position: absolute; }
+    .eddit_adress .eddit_adress_form .checkbox label {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 20px;
+      /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+      padding-left: 25px;
+      font: .87rem "600"; }
+    .eddit_adress .eddit_adress_form .checkbox label::before,
+    .eddit_adress .eddit_adress_form .checkbox label::after {
+      position: absolute;
+      content: "";
+      /*Needed for the line-height to take effect*/
+      display: inline-block; }
+    .eddit_adress .eddit_adress_form .checkbox label::before {
+      height: 16px;
+      width: 16px;
+      border-radius: 2px;
+      border: 1px solid;
+      left: 0px;
+      /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+            *to vertically center it.
+            */
+      top: -1px; }
+    .eddit_adress .eddit_adress_form .checkbox label::after {
+      height: 4px;
+      width: 6px;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      left: 5px;
+      top: 3.5px; }
+    .eddit_adress .eddit_adress_form .checkbox input[type="checkbox"] + label::after {
+      content: none; }
+    .eddit_adress .eddit_adress_form .checkbox input[type="checkbox"]:checked + label::after {
+      content: ""; }
+    .eddit_adress .eddit_adress_form .checkbox input[type="checkbox"]:checked + label::before {
+      content: "";
+      background: #000; }
+
+.lk_modal_eddit {
+  position: relative;
+  padding: 40px 20px;
+  background: #fff;
+  border-radius: 15px;
+  max-width: 345px;
+  margin: 0 auto; }
+  .lk_modal_eddit .eddit_mail_title {
+    font: 1.2rem "800";
+    margin-bottom: 25px; }
+  .lk_modal_eddit .eddit_mail_text {
+    font: .87rem "400";
+    margin-bottom: 25px; }
+  .lk_modal_eddit .eddit_modal_code {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    width: 150px;
+    margin: 0 auto; }
+    .lk_modal_eddit .eddit_modal_code input {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 12px 11px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      font: 1.4rem "600"; }
+    .lk_modal_eddit .eddit_modal_code .red {
+      border-color: #CD0404; }
+    .lk_modal_eddit .eddit_modal_code button {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 12px 11px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      font: 1.125rem "600";
+      background: #000;
+      color: #fff; }
+  .lk_modal_eddit .eddit_modal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px; }
+    .lk_modal_eddit .eddit_modal input {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 12px 11px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      font: 1rem "600"; }
+    .lk_modal_eddit .eddit_modal button {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 12px 11px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      font: 1.125rem "600";
+      background: #000;
+      color: #fff; }
+  .lk_modal_eddit .form_edit_pass {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px; }
+    .lk_modal_eddit .form_edit_pass input {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 12px 11px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      font: 1rem "600"; }
+    .lk_modal_eddit .form_edit_pass .input_box {
+      position: relative; }
+    .lk_modal_eddit .form_edit_pass .eye {
+      position: absolute;
+      right: 11px;
+      top: 13px;
+      max-width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .lk_modal_eddit .form_edit_pass .red {
+      border-color: #CD0404; }
+    .lk_modal_eddit .form_edit_pass .change_pass {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 12px 11px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      font: 1rem "600";
+      background: #EBEBEB;
+      color: #A0A0A0; }
+    .lk_modal_eddit .form_edit_pass .change_pass_active {
+      background: #000;
+      color: #fff; }
+    .lk_modal_eddit .form_edit_pass .red_text {
+      color: #CD0404;
+      font: .87rem "400";
+      margin-top: 6px; }
 
 html,
 body {

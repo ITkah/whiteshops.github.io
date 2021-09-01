@@ -646,3 +646,349 @@
         }
     }
 }
+
+
+.eddit_adress {
+    position: relative;
+    padding: 40px 20px;
+    background: #fff;
+    border-radius: 15px;
+    max-width: 345px;
+    margin: 0 auto;
+    .eddit_adress_title {
+        font: 1.2rem "800";
+        margin-bottom: 25px;
+    }
+    .eddit_adress_form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 11px;
+            border: 1px solid #000;
+            border-radius: 4px;
+            font: 1rem "600";
+        }
+        
+    .radio input[type="radio"] {
+        opacity: 0;
+        position: absolute;
+    }
+
+    .radio {
+        margin-bottom: 15px;
+    }
+
+    .eddit_day_wrap {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        overflow-y: scroll;
+        width: 100%;
+        .day_item {
+            width: 70px;
+            min-width: 70px;
+            max-width: 70px;
+            border-radius: 15px;
+            border: 1px solid #929292;
+            border-radius: 3px;
+            height: 30px;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            p {
+                text-align: center;
+                font: .87rem "600";
+                color: #000;
+                span {
+                    color: #929292;
+                    display: block;
+                    font: .7rem "600";
+                }
+            }
+        }
+        .day_item:last-child {
+            margin: 0;
+        }
+        .day_item_active {
+            border-color: #C1A790;
+            background: rgba(180, 134, 125, 0.08);
+        }
+    }
+
+    .radio label {
+        position: relative;
+        display: inline-block;
+        padding-left: 32px;
+        font: 1.1rem "600";
+        span {
+            margin-left: 10px;
+            color: #676767;
+            font: .87rem "600";
+        }
+    }
+
+    .radio label::before,
+    .radio label::after {
+        position: absolute;
+        content: "";
+        
+        /*Needed for the line-height to take effect*/
+        display: inline-block;
+    }
+
+    /*Outer box of the fake checkbox*/
+    .radio label::before{
+        height: 22px;
+        width: 22px;
+        border-radius: 50%;
+        border: 1px solid #000;
+        left: 0px;
+        top: -2px;
+    }
+
+    /*Checkmark of the fake checkbox*/
+    .radio label::after {
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background: #C1A790;
+        left: 4px;
+        top: 2px;
+    }
+
+    /*Hide the checkmark by default*/
+    .radio input[type="radio"] + label::after {
+        content: none;
+    }
+
+    /*Unhide on the checked state*/
+    .radio input[type="radio"]:checked + label::after {
+        content: "";
+    }
+        .input_group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+        }
+        .input_box {
+            position: relative;
+            svg, img {
+                position: absolute;
+                right: 10px;
+                top: 12.5px;
+            }
+        }
+        select {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 11px;
+            border: 1px solid #000;
+            border-radius: 4px;
+            font: 1rem "600";
+        }
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 11px;
+            border: 1px solid #000;
+            border-radius: 4px;
+            font: 1rem "600";
+            height: 150px;
+        }
+        button {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 11px;
+            border: 1px solid #000;
+            border-radius: 4px;
+            font: 1.125rem "600";
+            background: #000;
+            color: #fff;
+        }
+        .checkbox input[type="checkbox"] {
+            opacity: 0;
+            position: absolute;
+        }
+    
+        .checkbox label {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+            /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+            padding-left: 25px;
+            font: .87rem "600";
+        }
+    
+        .checkbox label::before,
+        .checkbox label::after {
+            position: absolute;
+            content: "";
+            
+            /*Needed for the line-height to take effect*/
+            display: inline-block;
+        }
+    
+        /*Outer box of the fake checkbox*/
+        .checkbox label::before{
+            height: 16px;
+            width: 16px;
+            border-radius: 2px;
+            border: 1px solid;
+            left: 0px;
+            
+            /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+            *to vertically center it.
+            */
+            top: -1px;
+        }
+    
+        /*Checkmark of the fake checkbox*/
+        .checkbox label::after {
+            height: 4px;
+            width: 6px;
+            border-left: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            
+            transform: rotate(-45deg);
+            
+            left: 5px;
+            top: 3.5px;
+        }
+    
+        /*Hide the checkmark by default*/
+        .checkbox input[type="checkbox"] + label::after {
+            content: none;
+        }
+    
+        /*Unhide on the checked state*/
+        .checkbox input[type="checkbox"]:checked + label::after {
+            content: "";
+        }
+    
+        .checkbox input[type="checkbox"]:checked + label::before {
+            content: "";
+            background: #000;
+        }
+    }
+}
+
+.lk_modal_eddit {
+    position: relative;
+    padding: 40px 20px;
+    background: #fff;
+    border-radius: 15px;
+    max-width: 345px;
+    margin: 0 auto;
+    .eddit_mail_title {
+        font: 1.2rem "800";
+        margin-bottom: 25px;
+    }
+    .eddit_mail_text {
+        font: .87rem "400";
+        margin-bottom: 25px;
+    }
+    .eddit_modal_code {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        width: 150px;
+        margin: 0 auto;
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 11px;
+            border: 1px solid #000;
+            border-radius: 4px;
+            font: 1.4rem "600";
+        }
+        .red {
+            border-color: #CD0404;
+        }
+        button {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 11px;
+            border: 1px solid #000;
+            border-radius: 4px;
+            font: 1.125rem "600";
+            background: #000;
+            color: #fff;
+        }
+    }
+    .eddit_modal {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 11px;
+            border: 1px solid #000;
+            border-radius: 4px;
+            font: 1rem "600";
+        }
+        button {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 11px;
+            border: 1px solid #000;
+            border-radius: 4px;
+            font: 1.125rem "600";
+            background: #000;
+            color: #fff;
+        }
+    }
+    
+    .form_edit_pass {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 11px;
+            border: 1px solid #000;
+            border-radius: 4px;
+            font: 1rem "600";
+        }
+        .input_box {
+            position: relative;
+        }
+        .eye {
+            position: absolute;
+            right: 11px;
+            top: 13px;
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .red {
+            border-color: #CD0404;
+        }
+        .change_pass {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 11px;
+            border: 1px solid #000;
+            border-radius: 4px;
+            font: 1rem "600";
+            background: #EBEBEB;
+            color: #A0A0A0;
+        }
+        .change_pass_active {
+            background: #000;
+            color:#fff;
+        }
+        .red_text {
+            color: #CD0404;
+            font: .87rem "400";
+            margin-top: 6px;
+        }
+    }
+}
