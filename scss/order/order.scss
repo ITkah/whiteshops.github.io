@@ -8,6 +8,16 @@
             color: #c1a790;
         }
     }
+    .order_page_sm  {
+        color: #000;
+        font: .87rem "400";
+        margin-bottom: 20px;
+        max-width: 320px;
+        a {
+            color: #c1a891;
+            font: .87rem "600";
+        }
+    }
     .order_id_text {
         font: 1.2rem "800";
         margin-bottom: 10px;
@@ -37,6 +47,12 @@
                 font: 1.125rem "800";
             }
         }
+        p:first-child {
+            &::after {
+                content: url(../img/order/arr.svg);
+                margin-left: 5px;
+            }
+        }
     }
 }
 
@@ -47,7 +63,7 @@
 }
 
 .order_pol_page {
-    margin-top: 15px;
+    margin-top: 20px;
     text-align: center;
     font: .87rem "800";
     a {
@@ -183,5 +199,113 @@
 .stage_4 {
     &::after {
         height: 98%;
+    }
+}
+
+.custom_bottom_order {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    .custom_bottom_text {
+        text-align: center;
+        font: 1rem/20px "400";
+        margin-bottom: 20px;
+    }
+    .custom_bottom_link {
+        width: 100%;
+        display: block;
+        background: #000000;
+        border-radius: 4px;
+        text-align: center;
+        color: #fff;
+        font: 1.2rem "800";
+        padding: 12px;
+        box-sizing: border-box;
+    }
+}
+
+.order_social {
+    margin-bottom: 60px;
+    p {
+        text-align: center;
+        margin-bottom: 15px;
+        color: #000;
+        font: 1.5rem "800";
+    }
+    .social_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            margin: 0 5px;
+        }
+    }
+}
+
+.thank_block {
+    padding: 40px 0;
+    margin-top: 30px;
+    margin-bottom: -25px;
+    position: relative;
+    img {
+        max-width: 100%;
+        height: 100%;
+        min-width: 120%;
+        width: 120%;
+        object-fit: cover;
+        position: absolute;
+        left: -10%;
+        top: 0;
+    }
+    .thank_title {
+        position: relative;
+        z-index: 9;
+        font: 1.5rem "900";
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .thank_text {
+        font: .87rem "600";
+        text-align: center;
+        color: #000;
+        margin-bottom: 15px;
+        position: relative;
+        z-index: 9;
+    }
+    .thank_btn {
+        position: relative;
+        z-index: 9;
+        max-width: 260px;
+        margin: 0 auto;
+        text-align: center;
+        background: #9F5025;
+        border-radius: 6px;
+        padding: 10px 30px;
+        box-sizing: border-box;
+        width: 100%;
+        display: block;
+        color: #fff;
+        font: 1.125rem "800";
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    .thank_sale {
+        position: relative;
+        z-index: 9;
+        font: 1.5rem "800";
+        color: #000;
+        text-align: center;
+        span {
+            color: #505050;
+            font: 1rem "600";
+            text-decoration: line-through;
+        }
+    }
+}
+
+.bug_page {
+    .bug_order_wrap_2 {
+        margin: 0;
+        margin-top: 35px;
     }
 }

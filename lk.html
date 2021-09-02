@@ -227,13 +227,13 @@
                                     <form class="user_data">
                                         <div class="input_box">
                                             <input type="text" placeholder="Имя" value="Валерия">
-                                            <a href="#" class="popup-with-zoom-anim">
+                                            <a href="#edit_name" class="popup-with-zoom-anim">
                                                 <img src="img/lk/pencil.svg" loading="lazy" alt="pencil">
                                             </a>
                                         </div>
                                         <div class="input_box">
                                             <input type="text" placeholder="Фамилия" value="Кравцова">
-                                            <a href="#" class="popup-with-zoom-anim">
+                                            <a href="#edit_sur" class="popup-with-zoom-anim">
                                                 <img src="img/lk/pencil.svg" loading="lazy" alt="pencil">
                                             </a>
                                         </div>
@@ -426,16 +426,20 @@
     <div id="edit_adress" class="zoom-anim-dialog eddit_adress mfp-hide">
         <p class="eddit_adress_title">Редактировать адрес</p>
         <form class="eddit_adress_form">
-            <select name="">
-                <option value="">Россия</option>
-                <option value="">Россия</option>
-                <option value="">Россия</option>
-            </select>
-            <select name="">
-                <option value="">Москва</option>
-                <option value="">Москва</option>
-                <option value="">Москва</option>
-            </select>
+            <div class="select_box">
+                <select name="">
+                    <option value="">Россия</option>
+                    <option value="">Россия</option>
+                    <option value="">Россия</option>
+                </select>
+            </div>
+            <div class="select_box">
+                <select name="">
+                    <option value="">Москва</option>
+                    <option value="">Москва</option>
+                    <option value="">Москва</option>
+                </select>
+            </div>
             <div class="input_box">
                 <input type="text" placeholder="Улица">
                 <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -459,16 +463,20 @@
     <div id="add_adress" class="zoom-anim-dialog eddit_adress mfp-hide">
         <p class="eddit_adress_title">Добавить адрес</p>
         <form class="eddit_adress_form">
-            <select name="">
-                <option value="">Россия</option>
-                <option value="">Россия</option>
-                <option value="">Россия</option>
-            </select>
-            <select name="">
-                <option value="">Москва</option>
-                <option value="">Москва</option>
-                <option value="">Москва</option>
-            </select>
+            <div class="select_box">
+                <select name="">
+                    <option value="">Россия</option>
+                    <option value="">Россия</option>
+                    <option value="">Россия</option>
+                </select>
+            </div>
+            <div class="select_box">
+                <select name="">
+                    <option value="">Москва</option>
+                    <option value="">Москва</option>
+                    <option value="">Москва</option>
+                </select>
+            </div>
             <div class="input_box">
                 <input type="text" placeholder="Улица">
                 <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -540,16 +548,20 @@
     <div id="edit_item_adress" class="zoom-anim-dialog eddit_adress mfp-hide">
         <p class="eddit_adress_title">Изменения адреса</p>
         <form class="eddit_adress_form">
-            <select name="">
-                <option value="">Россия</option>
-                <option value="">Россия</option>
-                <option value="">Россия</option>
-            </select>
-            <select name="">
-                <option value="">Москва</option>
-                <option value="">Москва</option>
-                <option value="">Москва</option>
-            </select>
+            <div class="select_box">
+                <select name="">
+                    <option value="">Россия</option>
+                    <option value="">Россия</option>
+                    <option value="">Россия</option>
+                </select>
+            </div>
+            <div class="select_box">
+                <select name="">
+                    <option value="">Москва</option>
+                    <option value="">Москва</option>
+                    <option value="">Москва</option>
+                </select>
+            </div>
             <div class="input_box">
                 <input type="text" placeholder="Улица">
                 <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -591,6 +603,23 @@
         <form class="eddit_modal form_phone">
             <input type="tel" placeholder="Телефон">
             <button type="submit">Изменение телефона</button>
+        </form>
+    </div>
+
+
+    <div id="edit_name" class="zoom-anim-dialog lk_modal_eddit mfp-hide">
+        <p class="eddit_mail_title">Изменение имени</p>
+        <form class="eddit_modal form_phone">
+            <input type="text" placeholder="Имя">
+            <button type="submit">Изменение имени</button>
+        </form>
+    </div>
+
+    <div id="edit_sur" class="zoom-anim-dialog lk_modal_eddit mfp-hide">
+        <p class="eddit_mail_title">Изменение фамилии</p>
+        <form class="eddit_modal form_phone">
+            <input type="text" placeholder="Фамилия">
+            <button type="submit">Изменение фамилии</button>
         </form>
     </div>
 
