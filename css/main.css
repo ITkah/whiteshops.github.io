@@ -83,7 +83,7 @@ main {
         height: 10px;
         width: 10px;
         position: absolute;
-        background: #B92362;
+        background: #000;
         color: #fff;
         font: 7px "600";
         text-align: center;
@@ -4029,6 +4029,156 @@ nav {
   color: #000;
   display: block;
   margin-top: 25px; }
+
+.order_box_title {
+  margin-bottom: 25px; }
+  .order_box_title .order_page_text {
+    font: 1.2rem "800";
+    margin-bottom: 15px;
+    color: #000; }
+    .order_box_title .order_page_text span {
+      color: #c1a790; }
+  .order_box_title .order_id_text {
+    font: 1.2rem "800";
+    margin-bottom: 10px; }
+    .order_box_title .order_id_text span {
+      display: block;
+      color: #9f5025; }
+  .order_box_title .order_data_text {
+    margin-bottom: 25px;
+    font: .87rem "400"; }
+    .order_box_title .order_data_text span {
+      display: block;
+      font: .87rem "800"; }
+  .order_box_title .order_bottom {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.21); }
+    .order_box_title .order_bottom p {
+      font: 1.125rem "400"; }
+      .order_box_title .order_bottom p span {
+        font: 1.125rem "800"; }
+
+.order_all p:first-child {
+  font: 1.05rem "400" !important; }
+
+.order_pol_page {
+  margin-top: 15px;
+  text-align: center;
+  font: .87rem "800"; }
+  .order_pol_page a {
+    color: #000;
+    display: block;
+    text-decoration: underline; }
+
+.order_page_info {
+  padding: 15px 25px;
+  background: #F3F3F3;
+  border-radius: 10px;
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px; }
+  .order_page_info .order_page_title {
+    font: 1.2rem "800"; }
+  .order_page_info .order_info_item {
+    font: 1rem "400";
+    color: #676767; }
+    .order_page_info .order_info_item span {
+      color: #000;
+      display: block;
+      font: 1rem "600"; }
+
+.order_page_map {
+  margin-top: 50px; }
+  .order_page_map iframe {
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 340px; }
+  .order_page_map p {
+    padding: 15px;
+    text-align: center;
+    background: #F3F3F3;
+    color: #000;
+    border-radius: 8px;
+    font: .9rem "600"; }
+    .order_page_map p span {
+      display: block;
+      text-decoration: underline;
+      color: #000;
+      font: 1rem "800"; }
+
+.stages_wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 50px;
+  margin-top: 60px;
+  position: relative; }
+  .stages_wrap::after {
+    content: '';
+    height: 98%;
+    position: absolute;
+    width: 10px;
+    display: block;
+    background: #000;
+    left: 20px;
+    top: 2px;
+    z-index: 3; }
+  .stages_wrap::before {
+    content: '';
+    height: 98%;
+    position: absolute;
+    width: 10px;
+    display: block;
+    background: #CECECE;
+    left: 20px;
+    z-index: 2;
+    top: 2px; }
+  .stages_wrap .stages_item {
+    display: grid;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-template-columns: 50px 1fr;
+    position: relative;
+    z-index: 4;
+    grid-gap: 20px; }
+    .stages_wrap .stages_item .item_stages_text p:first-child {
+      font: 1.125rem "800";
+      margin-bottom: 1px; }
+    .stages_wrap .stages_item .item_stages_text p:last-child {
+      color: #929292;
+      font: 1rem "400"; }
+  .stages_wrap .disabled svg circle {
+    fill: #CECECE; }
+  .stages_wrap .disabled p {
+    color: #929292; }
+
+.stage_1::after {
+  height: 22%; }
+
+.stage_2::after {
+  height: 50%; }
+
+.stage_3::after {
+  height: 79%; }
+
+.stage_4::after {
+  height: 98%; }
 
 footer {
   margin-bottom: 15px;
