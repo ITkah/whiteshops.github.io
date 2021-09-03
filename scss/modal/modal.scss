@@ -22,6 +22,42 @@
     }
 }
 
+.social_modal {
+    max-width: 345px;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+    border-radius: 15px;
+    padding: 40px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25px;
+    .social_title {
+        text-align: center;
+        margin-bottom: 10px;
+        color: #000;
+        font: 1.75rem "800";
+    }
+    .social_text {
+        text-align: center;
+        font: 1rem/115% "400";
+        margin-bottom: 25px;
+    }
+    .social_wr {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        max-width: 175px;
+        margin: 0 auto;
+        img {
+            height: 46px;
+            width: 46px;
+        }
+    }
+}
+
 .adress_modal {
     max-width: 345px;
     margin: 0 auto;
