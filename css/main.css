@@ -390,7 +390,7 @@ nav {
   .item_output .item_wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 50px 20px; }
+    grid-gap: 20px; }
     @media (max-width: 320px) {
       .item_output .item_wrap {
         grid-template-columns: 1fr;
@@ -483,6 +483,11 @@ nav {
     margin-bottom: 10px;
     display: block;
     font: 1.05rem "800"; }
+    .item_output .item .item_price span {
+      text-decoration: line-through;
+      font: .87rem "600";
+      margin-left: 5px;
+      color: #929292; }
   .item_output .item .choice_color {
     margin-bottom: 15px;
     display: -webkit-box;
@@ -1564,7 +1569,7 @@ nav {
   .item_page .item_img {
     position: relative;
     overflow: hidden;
-    height: 450px; }
+    height: 550px; }
     .item_page .item_img span {
       background: #000;
       position: absolute;
