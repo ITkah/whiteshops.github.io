@@ -5971,6 +5971,9 @@ footer {
       font: .87rem "400";
       margin-top: 6px; }
 
+.color_beg {
+  color: #C1A790 !important; }
+
 html,
 body {
   padding: 0;
