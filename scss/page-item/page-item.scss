@@ -475,6 +475,11 @@
         justify-content: space-between;
         padding: 0 15px;
         margin-bottom: 15px;
+        a {
+            text-decoration-line: underline;
+            font: .87rem "600";
+            color: #000;
+        }
         p:first-child {
             text-decoration-line: underline;
             font: .87rem "600";
@@ -588,6 +593,8 @@
                 font: 1.1rem "600";
                 height: 100%;
                 text-align: center;
+                position: relative;
+                left: -8px;
                 border: none;
                 background: transparent;
                 appearance: none;
@@ -598,7 +605,7 @@
             }
             svg {
                 position: absolute;
-                right: 15px;
+                right: 8px;
                 pointer-events: none;
             }
         }
@@ -733,7 +740,7 @@
 .modal_sizes {
     background: #fff;
     position: relative;
-    padding: 50px 0;
+    padding: 40px 0;
     max-width: 400px;
     overflow: hidden;
     margin: 0 auto;
@@ -977,7 +984,7 @@
         background: #000!important;
     }
     .item_img {
-        height: 420px!important;
+        height: 480px!important;
     }
 }
 
@@ -1011,4 +1018,8 @@
             }
         }
     }
+}
+
+.disabled_select {
+    opacity: .6;
 }

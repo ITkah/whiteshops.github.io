@@ -66,6 +66,7 @@ $(".close_icon").on("click", function() {
 $(".bg").on("click", function() {
     $("nav").removeClass("nav_active");
     $(".bg").removeClass("bg_active");
+    $(".modal_btn_wrap").removeClass("modal_btn_wrap_active");
 });
 
 $(".call_adress_1").on("click", function(e){
@@ -235,6 +236,59 @@ $(".form_phone").submit(function(e) {
     return false;
 });
 
+$(".send_reviews").submit(function(e) {
+    e.preventDefault();
+    let form_data = $(this).serializeArray();
+    $.ajax({
+        type: "POST",
+        url: "../../mail-2.php",
+        data: form_data,
+        success: function(response) {
+            console.log(response);
+            $(".thank_question").click();
+        },
+        error: function(error) {
+            $(".thank_question").click();
+        }
+    });
+    return false;
+});
+
+$(".send_quest").submit(function(e) {
+    e.preventDefault();
+    let form_data = $(this).serializeArray();
+    $.ajax({
+        type: "POST",
+        url: "../../mail-2.php",
+        data: form_data,
+        success: function(response) {
+            console.log(response);
+            $(".thank_question").click();
+        },
+        error: function(error) {
+            $(".thank_question").click();
+        }
+    });
+    return false;
+});
+
+$(".send_reviews").submit(function(e) {
+    e.preventDefault();
+    let form_data = $(this).serializeArray();
+    $.ajax({
+        type: "POST",
+        url: "../../mail-2.php",
+        data: form_data,
+        success: function(response) {
+            console.log(response);
+            $(".thank_answer").click();
+        },
+        error: function(error) {
+            $(".thank_answer").click();
+        }
+    });
+    return false;
+});
 
 $(".size_item").on("click", function(){
     $(".size_item").removeClass("active");
@@ -326,4 +380,19 @@ const swiper_bug = new Swiper('.swiper_bug', {
       el: '.swiper_bug .swiper-pagination',
       clickable: true,
     },
+});
+
+$(".show_items_click").on("click", function(e){
+    e.preventDefault();
+    $(".bug_main_wrap").slideToggle(200);
+});
+
+$(".call_btn_wrap").on("click", function(){
+    $(".bg").addClass("bg_active");
+    $(".modal_btn_wrap").toggleClass("modal_btn_wrap_active");
+});
+
+$(".modal_btn_bottom a:last-child").on("click", function(e){
+    e.preventDefault();
+    $(".modal_btn_wrap").removeClass("modal_btn_wrap_active");
 });

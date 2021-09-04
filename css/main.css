@@ -1743,6 +1743,11 @@ nav {
             justify-content: space-between;
     padding: 0 15px;
     margin-bottom: 15px; }
+    .item_page .size_top a {
+      -webkit-text-decoration-line: underline;
+              text-decoration-line: underline;
+      font: .87rem "600";
+      color: #000; }
     .item_page .size_top p:first-child {
       -webkit-text-decoration-line: underline;
               text-decoration-line: underline;
@@ -1873,6 +1878,8 @@ nav {
         font: 1.1rem "600";
         height: 100%;
         text-align: center;
+        position: relative;
+        left: -8px;
         border: none;
         background: transparent;
         -webkit-appearance: none;
@@ -1885,7 +1892,7 @@ nav {
         outline: none; }
       .item_page .item_modal_btn .select svg {
         position: absolute;
-        right: 15px;
+        right: 8px;
         pointer-events: none; }
   .item_page .item_modal_bottom {
     display: grid;
@@ -2031,7 +2038,7 @@ nav {
 .modal_sizes {
   background: #fff;
   position: relative;
-  padding: 50px 0;
+  padding: 40px 0;
   max-width: 400px;
   overflow: hidden;
   margin: 0 auto; }
@@ -2265,7 +2272,7 @@ nav {
   .modal_size_wrappers .swiper-pagination-bullet-active {
     background: #000 !important; }
   .modal_size_wrappers .item_img {
-    height: 420px !important; }
+    height: 480px !important; }
 
 .item_output_page ::-webkit-scrollbar {
   width: 0;
@@ -2295,6 +2302,9 @@ nav {
         width: 160px;
         min-width: 160px;
         max-width: 160px; } }
+
+.disabled_select {
+  opacity: .6; }
 
 .home_catalog_top {
   margin-top: 20px;
@@ -3029,6 +3039,8 @@ nav {
       margin-bottom: 5px;
       color: #929292;
       font: .75rem "400"; }
+      .bug_page .bug_item_wrap .bug_item_info .bug_attr span {
+        margin-left: 8px; }
       .bug_page .bug_item_wrap .bug_item_info .bug_attr img {
         margin-left: 5px;
         -webkit-appearance: none;
@@ -3177,9 +3189,19 @@ nav {
           .bug_order_wrap .bug_order_item .bug_order_info .order_size_wrap {
             grid-gap: 10px;
             grid-template-columns: 110px 1fr; } }
+        .bug_order_wrap .bug_order_item .bug_order_info .order_size_wrap .select_box::after {
+          top: 10px;
+          right: 9px;
+          content: '';
+          background: url(../img/arr.svg);
+          background-size: 6px 6px;
+          height: 6px;
+          width: 6px;
+          display: block; }
         .bug_order_wrap .bug_order_item .bug_order_info .order_size_wrap select {
-          font: .75rem "800";
-          padding: 3px 10px;
+          width: 100%;
+          font: .8rem "800";
+          padding: 5px 10px;
           background: #fff;
           border: none;
           outline: none;
@@ -3247,12 +3269,12 @@ nav {
               -ms-flex-pack: center;
                   justify-content: center; }
           .bug_order_wrap .bug_order_item .bug_order_info .item_modal_btn .select select {
-            width: 30px;
+            width: 35px;
             text-align: center;
             font: .87rem "600";
             height: 100%;
             position: relative;
-            left: 3px;
+            left: -8px;
             text-align: center;
             border: none;
             background: transparent;
@@ -3266,7 +3288,7 @@ nav {
             outline: none; }
           .bug_order_wrap .bug_order_item .bug_order_info .item_modal_btn .select svg {
             position: absolute;
-            right: 8px;
+            right: 5px;
             pointer-events: none; }
 
 .order_info {
@@ -3374,6 +3396,8 @@ nav {
     grid-template-columns: 1fr;
     grid-gap: 8px;
     margin-bottom: 30px; }
+    .order_item_box .order_item_select .select_box::after {
+      top: 10px; }
     .order_item_box .order_item_select select {
       color: #000;
       padding: 10px;
@@ -3529,6 +3553,56 @@ nav {
   .polit a {
     text-decoration: underline;
     color: #000; }
+
+.modal_btn_wrap {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  -webkit-transform: translateY(130%);
+      -ms-transform: translateY(130%);
+          transform: translateY(130%);
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #FFF;
+  border-radius: 15px 15px 0px 0px;
+  padding: 30px; }
+  .modal_btn_wrap .modal_btn_bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px; }
+    .modal_btn_wrap .modal_btn_bottom a {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      border: 1px solid #000000;
+      border-radius: 4px;
+      text-align: center;
+      color: #fff;
+      font: 1.25rem "800";
+      padding: 15px;
+      display: block;
+      background: #000; }
+    .modal_btn_wrap .modal_btn_bottom a:last-child {
+      background: #fff;
+      color: #000; }
+
+.modal_btn_wrap_active {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0); }
+
+.choince_size {
+  padding: 0 15px;
+  margin-bottom: 10px;
+  position: relative;
+  top: -5px;
+  font: 1rem "400"; }
 
 .bread {
   margin-bottom: 20px;
@@ -4348,6 +4422,24 @@ nav {
 .bug_page .bug_order_wrap_2 {
   margin: 0;
   margin-top: 35px; }
+
+.call_btn_wrap {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: -5px; }
+  .call_btn_wrap::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: 0;
+    height: 30px; }
+  .call_btn_wrap img {
+    margin: 0 auto;
+    display: block; }
 
 .delvery_top {
   margin-bottom: 40px;
