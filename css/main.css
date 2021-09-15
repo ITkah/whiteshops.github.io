@@ -265,6 +265,10 @@ nav {
        -moz-appearance: none;
             appearance: none; }
 
+.size_none p {
+  color: #9f5025;
+  font: 1rem "600"; }
+
 .home_img {
   margin-bottom: 5px; }
   .home_img img {
@@ -3602,7 +3606,27 @@ nav {
   margin-bottom: 10px;
   position: relative;
   top: -5px;
-  font: 1rem "400"; }
+  color: #9f5025;
+  font: 1rem "600"; }
+
+.none_size {
+  border-radius: 5px;
+  margin: 0 15px;
+  padding: 0 !important;
+  position: relative; }
+  .none_size::after {
+    content: '';
+    border: 2px solid #9f5025;
+    position: absolute;
+    height: 99%;
+    top: -2px;
+    left: -1px;
+    border-radius: 5px;
+    right: 0;
+    pointer-events: none;
+    display: block;
+    bottom: 0;
+    width: 99%; }
 
 .bread {
   margin-bottom: 20px;

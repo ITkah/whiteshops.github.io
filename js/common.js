@@ -293,10 +293,12 @@ $(".send_reviews").submit(function(e) {
 $(".size_item").on("click", function(){
     $(".size_item").removeClass("active");
     $(this).addClass("active");
+    $(this).parent().removeClass("none_size").siblings(".choince_size").hide();
 });
 
 $(".size_item_2").on("click", function(){
     $(this).toggleClass("active");
+    $(this).parent().removeClass("none_size").siblings(".choince_size").hide();
 });
 
 $(".item_btn .popup-with-zoom-anim").on("click", function(){
@@ -396,3 +398,5 @@ $(".modal_btn_bottom a:last-child").on("click", function(e){
     e.preventDefault();
     $(".modal_btn_wrap").removeClass("modal_btn_wrap_active");
 });
+
+$(".modal_size_wrap").addClass("none_size");
