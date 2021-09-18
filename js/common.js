@@ -400,3 +400,10 @@ $(".modal_btn_bottom a:last-child").on("click", function(e){
 });
 
 $(".modal_size_wrap").addClass("none_size");
+
+$(".pencil").on("click", function(){
+    $(this).addClass("pencil_opac");
+    $(".mfp-close").on("click", function(){
+        $(".pencil").removeClass("pencil_opac");
+    });
+});
