@@ -3509,8 +3509,7 @@ nav {
       -o-object-fit: cover;
          object-fit: cover; }
     .order_item_box .pay_wrap .pay {
-      margin-left: 10px;
-      height: 50px; }
+      margin-left: 10px; }
   .order_item_box .card_text {
     font: .87rem "400"; }
     .order_item_box .card_text a {
