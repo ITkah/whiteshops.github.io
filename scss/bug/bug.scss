@@ -717,11 +717,9 @@
         margin: 5px 0;
         height: 30px;
         img {
-            margin-right: 5px;
+            margin-right: 10px;
+            max-height: 20px;
             object-fit: cover;
-        }
-        .pay {
-            margin-left: 10px;
         }
     }
     .card_text {
