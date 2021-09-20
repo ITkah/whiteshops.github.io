@@ -5032,11 +5032,11 @@ footer {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   padding: 0 15px; }
   .footer_icon img {
     max-width: 100%;
-    max-height: 60px;
+    max-height: 30px;
     -o-object-fit: cover;
        object-fit: cover; }
 
