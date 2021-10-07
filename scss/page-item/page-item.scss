@@ -881,6 +881,9 @@
     .mfp-close {
         top: 0!important;
     } 
+    .none_size::after {
+        top: -4px;
+    }
 }
 
 .modal_landing_wrappers {

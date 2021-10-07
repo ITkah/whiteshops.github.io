@@ -2173,6 +2173,8 @@ nav {
   background: #fff; }
   .modal_landes .mfp-close {
     top: 0 !important; }
+  .modal_landes .none_size::after {
+    top: -4px; }
 
 .modal_landing_wrappers {
   -webkit-box-sizing: border-box;
